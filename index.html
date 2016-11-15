@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tic-Tac-Toe</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="outer-container">
-    <button class="hard-reset">Reset All</button>
-    <p class="score-1"><span class="points"></span><span class="name"></span></p>
-    <i class="points-divider">&#124;</i>
-    <p class="score-2"><span class="points"></span><span class="name"></span></p>
-    <div class="player-one-turn">
-      <p></p>
-    </div>
-    <div class="player-two-turn">
-      <p></p>
-    </div>
-    <div class="board-container">
-      <div class="game-board">
-        <div class="draw-message">
-          <p>It was a draw..</p>
+    <div class="outer-container">
+        <button class="hard-reset">Reset All</button>
+        <p class="score-1"><span class="points"></span><span class="name"></span></p>
+        <i class="points-divider">&#124;</i>
+        <p class="score-2"><span class="points"></span><span class="name"></span></p>
+        <div class="player-one-turn">
+            <p></p>
         </div>
-        <div class="lose-message">
-          <p>Uh oh, you lost..</p>
+        <div class="player-two-turn">
+            <p></p>
         </div>
-        <div class="win-message">
-          <p>You Won!!! :)</p>
+        <div class="board-container">
+            <div class="game-board">
+                <div class="draw-message">
+                    <p>It was a draw..</p>
+                </div>
+                <div class="lose-message">
+                    <p>Uh oh, you lost..</p>
+                </div>
+                <div class="win-message">
+                    <p>You Won!!! :)</p>
+                </div>
+                <canvas id="myCanvas"></canvas>
+                <ul class="boxes">
+                    <li class="1"><i class="letter"><span></span></i></li>
+                    <li class="2"><i class="letter"><span></span></i></li>
+                    <li class="3"><i class="letter"><span></span></i></li>
+                    <li class="4"><i class="letter"><span></span></i></li>
+                    <li class="5"><i class="letter"><span></span></i></li>
+                    <li class="6"><i class="letter"><span></span></i></li>
+                    <li class="7"><i class="letter"><span></span></i></li>
+                    <li class="8"><i class="letter"><span></span></i></li>
+                    <li class="9"><i class="letter"><span></span></i></li>
+                </ul>
+            </div>
         </div>
-        <canvas id="myCanvas"></canvas>
-        <ul class="boxes">
-          <li class="1"><i class="letter"><span>O</span></i></li>
-          <li class="2"><i class="letter"><span>O</span></i></li>
-          <li class="3"><i class="letter"><span>O</span></i></li>
-          <li class="4"><i class="letter"><span></span></i></li>
-          <li class="5"><i class="letter"><span></span></i></li>
-          <li class="6"><i class="letter"><span></span></i></li>
-          <li class="7"><i class="letter"><span></span></i></li>
-          <li class="8"><i class="letter"><span></span></i></li>
-          <li class="9"><i class="letter"><span></span></i></li>
-        </ul>
-      </div>
     </div>
-  </div>
-  <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>

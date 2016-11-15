@@ -31,3 +31,26 @@
     canvas.closePath();
     canvas.stroke();
   })();
+
+
+var proximo = "X";
+
+  $('.letter').click(function(){
+    if($(this).find('span').html()){
+      return
+
+    }
+    $(this).find('span').html(proximo)
+
+      if(proximo == "X"){
+        proximo = "O"
+
+      }
+      else{
+        proximo = "X";
+
+      }
+
+   
+
+  })
